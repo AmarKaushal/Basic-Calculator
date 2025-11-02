@@ -66,11 +66,15 @@ button{
     font-size: 25px;
     font-weight:600;}
 
+button:active {
+    transform: translateY(1px);
+}
+
 .operator{
     color: #26FED7;}
 
 .equal{
-    background-color: #EB6666;
+    background-color: #d63f3f;
     font-weight:600;
     font-size: 30px;
     grid-column: 3/5;}
@@ -80,7 +84,7 @@ button{
 
 .brand{
     text-align:center;
-    color:#9ca3af;
+    color: white;
     margin-bottom:15px;
     letter-spacing:1px;
     font-size:1.5rem;
