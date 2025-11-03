@@ -1,9 +1,11 @@
+/* Google fonts use kiya hai */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Poppins",sans-serif;}
+    font-family:"Poppins",sans-serif;
+}
 
 body{
     height:100vh;
@@ -11,23 +13,21 @@ body{
     justify-content:center;
     align-items:center;
     background: radial-gradient(circle at 30% 20%, #1a1f3c, #0a0c1a 70%);
-    overflow:hidden;}
+    overflow:hidden;
+}
 
 /* Calculator Body Hai */
-.calculator
-{
+.calculator{
     width:340px;
     padding:25px;
     border-radius:25px;
     background: black;
-    box-shadow: 0 0 30px rgba(0,0,0,0.4), inset 0 0 10px rgba(255,255,255,0.05);
-    backdrop-filter: blur(15px);
+    border: 1.5px solid rgb(255, 255, 255);
     position:relative;
 }
 
 /* Input & Output Display Hai */
-.display
-{
+.display{
     height:90px;
     border-radius:18px;
     background:rgba(255,255,255,0.07);
@@ -39,9 +39,8 @@ body{
     scrollbar-width:none;
 }
 
-/* Numbers & Operators Button Hai */
-.buttons
-{
+/* Buttons ka arrangement */
+.buttons{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:15px;
@@ -49,8 +48,7 @@ body{
 }
 
 /* Yah Button Ka Style Hai */
-button
-{
+button{
     height:65px;
     border:none;
     outline:none;
