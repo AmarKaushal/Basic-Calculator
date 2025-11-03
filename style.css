@@ -4,6 +4,7 @@
     padding:0;
     box-sizing:border-box;
     font-family:"Poppins",sans-serif;}
+
 body{
     height:100vh;
     display:flex;
@@ -11,6 +12,8 @@ body{
     align-items:center;
     background: radial-gradient(circle at 30% 20%, #1a1f3c, #0a0c1a 70%);
     overflow:hidden;}
+
+/* Calculator Body Hai */
 .calculator
 {
     width:340px;
@@ -21,6 +24,8 @@ body{
     backdrop-filter: blur(15px);
     position:relative;
 }
+
+/* Input & Output Display Hai */
 .display
 {
     height:90px;
@@ -34,6 +39,7 @@ body{
     scrollbar-width:none;
 }
 
+/* Numbers & Operators Button Hai */
 .buttons
 {
     display:grid;
@@ -42,6 +48,7 @@ body{
     margin-top:25px;
 }
 
+/* Yah Button Ka Style Hai */
 button
 {
     height:65px;
@@ -73,15 +80,18 @@ button:active {
 .operator{
     color: #26FED7;}
 
+/* = Operator ka style */
 .equal{
     background-color: #d63f3f;
     font-weight:600;
     font-size: 30px;
     grid-column: 3/5;}
 
+/* AC Operator ka style */
 .clear{
     color:#ff3b6c;}
 
+/* Heading ka style */
 .brand{
     text-align:center;
     color: white;
@@ -90,6 +100,7 @@ button:active {
     font-size:1.5rem;
     font-weight: 800;}
 
+/* Responsive ke liye */
 @media(max-width:400px){
     .calculator{width:90vw;padding:20px;}
     .display{font-size:1.7rem;}

@@ -15,12 +15,15 @@ buttons.forEach(btn=>{
             expression="";
             updateDisplay("0");}
 
-        else if(val==="D"){
+        else if(val==="D")
+            {
             expression = expression.slice(0,-1);
-            updateDisplay(expression) || "0";}
+            updateDisplay(expression) || "0";
+            }
 
         else if(val==="="){
-            try{
+            try
+            {
                 let exp = expression
                 .replace(/x/g, "*")
                 .replace(/÷/g, "/");
@@ -28,15 +31,18 @@ buttons.forEach(btn=>{
                 expression = result.toString();
                 updateDisplay(expression);
                 display.style.color = "#00ff7f";
-            }catch{
+            }
+            catch
+            {
                 updateDisplay("Error");
                 expression="";
                 display.style.color = "#ff3b6c";
             }
-      }
-      else{
-        expression += val;
-        updateDisplay(expression);
-      }
+        }
+        else
+            {
+                expression += val;
+                updateDisplay(expression);
+            }
     });
   });
